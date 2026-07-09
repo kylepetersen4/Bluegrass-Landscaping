@@ -127,7 +127,7 @@ header.site{
   transition:box-shadow .3s;
 }
 header.site.scrolled{box-shadow:var(--shadow-sm);}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem clamp(1.1rem,4vw,2.5rem);}
 
 /* Logo lockup — real grass icon + wordmark */
 .brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;flex-shrink:0;}
@@ -179,7 +179,7 @@ header.site.scrolled{box-shadow:var(--shadow-sm);}
 .hero-blades{position:absolute;left:0;right:0;bottom:-1px;z-index:1;pointer-events:none;line-height:0;opacity:.9;}
 .hero-blades svg{width:100%;height:auto;display:block;}
 
-.hero-inner{position:relative;z-index:2;padding:clamp(3.5rem,9vw,7rem) 0 clamp(5rem,10vw,8rem);}
+.hero-inner{position:relative;z-index:2;padding:clamp(3.5rem,9vw,7rem) clamp(1.1rem,4vw,2.5rem) clamp(5rem,10vw,8rem);}
 .hero-grid{max-width:820px;}
 .hero .eyebrow{color:#a9d6c0;}
 .hero .eyebrow::before{background:var(--green);}
